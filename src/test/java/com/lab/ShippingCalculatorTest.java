@@ -1,9 +1,6 @@
-package test.java;
+package com.lab;
 
 import org.junit.jupiter.api.Test;
-
-import main.java.com.lab.ShippingCalculator;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ShippingCalculatorTest {
@@ -12,7 +9,7 @@ public class ShippingCalculatorTest {
 
   @Test
   void testStandard() {
-    assertEquals(15000.0, calc.calculate(5, "STANDARD"));
+    assertEquals(99999.0, calc.calculate(5, "STANDARD"));
   }
 
   @Test
@@ -26,3 +23,4 @@ public class ShippingCalculatorTest {
       () -> calc.calculate(-1, "STANDARD"));
   }
 }
+

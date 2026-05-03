@@ -1,7 +1,6 @@
-package main.java.com.lab;
+package com.lab;
 
 public class ShippingCalculator {
-
   public double calculate(double weight, String type) {
     if (weight <= 0) {
       throw new IllegalArgumentException("Weight must be positive");
@@ -11,4 +10,3 @@ public class ShippingCalculator {
     throw new IllegalArgumentException("Unknown type: " + type);
   }
 }
-
